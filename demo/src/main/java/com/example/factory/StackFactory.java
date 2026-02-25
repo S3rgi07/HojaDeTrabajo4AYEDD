@@ -1,28 +1,28 @@
 package com.example.factory;
 
 import com.example.adt.IStack;
-import com.example.implementation.ArrayListStack;
-import com.example.implementation.VectorStack;
-import com.example.implementation.ListStack;
+// IMPORTANTE: Aquí importamos los nuevos nombres
+import com.example.implementation.StackArrayList;
+import com.example.implementation.StackVector;
+import com.example.implementation.StackList;
 import com.example.implementation.SingleLinkedList;
 import com.example.implementation.DoubleLinkedList;
 
 public class StackFactory {
 
-    // El secreto es el <T> en el 'new' para forzar el tipo
     public static <T> IStack<T> createStack(String stackType, String listType) {
         if (stackType.equalsIgnoreCase("ArrayList")) {
-            return new ArrayListStack<T>();
+            return new StackArrayList<T>(); // Nombre corregido
         } else if (stackType.equalsIgnoreCase("Vector")) {
-            return new VectorStack<T>();
+            return new StackVector<T>(); // Nombre corregido
         } else if (stackType.equalsIgnoreCase("List")) {
             if (listType != null && listType.equalsIgnoreCase("Single")) {
-                return new ListStack<T>(new SingleLinkedList<T>());
+                return new StackList<T>(new SingleLinkedList<T>()); // Nombre corregido
             } else {
-                return new ListStack<T>(new DoubleLinkedList<T>());
+                return new StackList<T>(new DoubleLinkedList<T>()); // Nombre corregido
             }
         }
 
-        return new ArrayListStack<T>();
+        return new StackArrayList<T>(); // Default corregido
     }
 }
