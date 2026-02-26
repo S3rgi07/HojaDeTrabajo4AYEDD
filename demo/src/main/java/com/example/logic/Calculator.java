@@ -1,7 +1,7 @@
 package com.example.logic;
 
 import com.example.adt.IStack;
-import com.example.implementation.ArrayListStack;
+import com.example.implementation.StackArrayList;
 
 public class Calculator {
     private static Calculator instance;
@@ -18,7 +18,7 @@ public class Calculator {
 
     public String infixToPostfix(String expression) {
         StringBuilder postfix = new StringBuilder();
-        IStack<Character> stack = new ArrayListStack<>();
+        IStack<Character> stack = new StackArrayList<>();
 
         expression = expression.replaceAll("\\s+", "");
 
