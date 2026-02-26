@@ -2,6 +2,15 @@ package com.example.implementation;
 
 import com.example.adt.AbstractList;
 
+/**
+ * Lista doblemente encadenada.
+ * Tiene referencias al inicio (head) y al final (tail) para operaciones más
+ * rápidas.
+ * * @author Sergio López
+ * 
+ * @author Cristopher Serrano
+ * @param <T> Tipo de dato.
+ */
 public class DoubleLinkedList<T> extends AbstractList<T> {
     private Node<T> head;
     private Node<T> tail;
@@ -13,6 +22,11 @@ public class DoubleLinkedList<T> extends AbstractList<T> {
         count = 0;
     }
 
+    /**
+     * Agrega al final en O(1) usando la referencia tail.
+     * 
+     * @param item Dato a agregar.
+     */
     @Override
     public void add(T item) {
         Node<T> newNode = new Node<>(item);
@@ -27,11 +41,17 @@ public class DoubleLinkedList<T> extends AbstractList<T> {
         count++;
     }
 
+    /**
+     * Elimina el último elemento en O(1) actualizando el tail.
+     * 
+     * @return Dato eliminado.
+     */
     @Override
     public T removeLast() {
         if (isEmpty())
             return null;
         T data = tail.data;
+
         if (head == tail) {
             head = null;
             tail = null;

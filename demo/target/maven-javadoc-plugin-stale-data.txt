@@ -1,0 +1,45 @@
+@options
+@packages
+-encoding
+'UTF-8'
+-protected
+-source
+'17'
+-sourcepath
+'C:/Users/sergi/Desktop/UVG/Semestre III/Algoritmos y Estructuras de Datos/HojaDeTrabajo4AYEDD/demo/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2026. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/sergi/Desktop/UVG/Semestre III/Algoritmos y Estructuras de Datos/HojaDeTrabajo4AYEDD/demo/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'demo 1.0-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'demo 1.0-SNAPSHOT API'
+com.example.adt
+com.example.factory
+com.example.implementation
+com.example.io
+com.example.logic
+com.example
+C:\Users\sergi\Desktop\UVG\Semestre III\Algoritmos y Estructuras de Datos\HojaDeTrabajo4AYEDD\demo\src\main\java = 1772040349626
+C:\Users\sergi\Desktop\UVG\Semestre III\Algoritmos y Estructuras de Datos\HojaDeTrabajo4AYEDD\demo\target\site\apidocs\allclasses-index.html = 1772075443914
+C:\Users\sergi\Desktop\UVG\Semestre III\Algoritmos y Estructuras de Datos\HojaDeTrabajo4AYEDD\demo\target\site\apidocs\allpackages-index.html = 1772075443923
+C:\Users\sergi\Desktop\UVG\Semestre III\Algoritmos y Estructuras de Datos\HojaDeTrabajo4AYEDD\demo\target\site\apidocs\element-list = 1772075443418
+C:\Users\sergi\Desktop\UVG\Semestre III\Algoritmos y Estructuras de Datos\HojaDeTrabajo4AYEDD\demo\target\site\apidocs\help-doc.html = 1772075444014
+C:\Users\sergi\Desktop\UVG\Semestre III\Algoritmos y Estructuras de Datos\HojaDeTrabajo4AYEDD\demo\target\site\apidocs\index-all.html = 1772075443986
+C:\Users\sergi\Desktop\UVG\Semestre III\Algoritmos y Estructuras de Datos\HojaDeTrabajo4AYEDD\demo\target\site\apidocs\index.html = 1772075443855
+C:\Users\sergi\Desktop\UVG\Semestre III\Algoritmos y Estructuras de Datos\HojaDeTrabajo4AYEDD\demo\target\site\apidocs\member-search-index.js = 1772075443946
+C:\Users\sergi\Desktop\UVG\Semestre III\Algoritmos y Estructuras de Datos\HojaDeTrabajo4AYEDD\demo\target\site\apidocs\module-search-index.js = 1772075443929
+C:\Users\sergi\Desktop\UVG\Semestre III\Algoritmos y Estructuras de Datos\HojaDeTrabajo4AYEDD\demo\target\site\apidocs\overview-summary.html = 1772075444002
+C:\Users\sergi\Desktop\UVG\Semestre III\Algoritmos y Estructuras de Datos\HojaDeTrabajo4AYEDD\demo\target\site\apidocs\overview-tree.html = 1772075443842
+C:\Users\sergi\Desktop\UVG\Semestre III\Algoritmos y Estructuras de Datos\HojaDeTrabajo4AYEDD\demo\target\site\apidocs\package-search-index.js = 1772075443935
+C:\Users\sergi\Desktop\UVG\Semestre III\Algoritmos y Estructuras de Datos\HojaDeTrabajo4AYEDD\demo\target\site\apidocs\search.html = 1772075443994
+C:\Users\sergi\Desktop\UVG\Semestre III\Algoritmos y Estructuras de Datos\HojaDeTrabajo4AYEDD\demo\target\site\apidocs\tag-search-index.js = 1772075443950
+C:\Users\sergi\Desktop\UVG\Semestre III\Algoritmos y Estructuras de Datos\HojaDeTrabajo4AYEDD\demo\target\site\apidocs\type-search-index.js = 1772075443940

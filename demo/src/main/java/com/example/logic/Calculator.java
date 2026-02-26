@@ -3,12 +3,25 @@ package com.example.logic;
 import com.example.adt.IStack;
 import com.example.implementation.StackArrayList;
 
+/**
+ * Singleton que maneja la lógica de la calculadora.
+ * Convierte expresiones Infix a Postfix y las evalúa.
+ * 
+ * @author Sergio López
+ * @author Cristopher Serrano
+ */
 public class Calculator {
     private static Calculator instance;
 
+    /** Constructor privado para el Singleton. */
     private Calculator() {
     }
 
+    /**
+     * Obtiene la única instancia de la calculadora.
+     * 
+     * @return Instancia de Calculator.
+     */
     public static Calculator getInstance() {
         if (instance == null) {
             instance = new Calculator();
@@ -16,6 +29,13 @@ public class Calculator {
         return instance;
     }
 
+    /**
+     * Convierte una expresión de notación Infix a Postfix usando el algoritmo
+     * Shunting Yard.
+     * 
+     * @param expression La expresión matemática en texto (ej. "3+4").
+     * @return La expresión convertida a postfix (ej. "34+").
+     */
     public String infixToPostfix(String expression) {
         StringBuilder postfix = new StringBuilder();
         IStack<Character> stack = new StackArrayList<>();
@@ -49,6 +69,13 @@ public class Calculator {
         return postfix.toString();
     }
 
+    /**
+     * Evalúa una expresión en formato Postfix.
+     * 
+     * @param postfix La expresión postfix a calcular.
+     * @param stack   La pila que se usará para el cálculo.
+     * @return El resultado numérico de la operación.
+     */
     public double evaluatePostfix(String postfix, IStack<Double> stack) {
         for (int i = 0; i < postfix.length(); i++) {
             char c = postfix.charAt(i);

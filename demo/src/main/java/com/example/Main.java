@@ -8,7 +8,20 @@ import com.example.factory.StackFactory;
 import com.example.io.FileReader;
 import com.example.logic.Calculator;
 
+/**
+ * Clase principal del programa.
+ * Interactúa con el usuario y coordina la lectura de archivos y cálculos.
+ * * @author Sergio López
+ * 
+ * @author Cristopher Serrano
+ */
 public class Main {
+
+    /**
+     * Punto de entrada de la aplicación.
+     * 
+     * @param args Argumentos de línea de comandos (no usados).
+     */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         FileReader fileReader = new FileReader();
@@ -25,7 +38,7 @@ public class Main {
         }
 
         try {
-            // El archivo datos.txt debe estar en la raíz (fuera de src)
+            // Se asume que datos.txt está en la raíz del proyecto
             List<String> lines = fileReader.readLines("datos.txt");
 
             for (String infix : lines) {
@@ -34,6 +47,7 @@ public class Main {
                     String postfix = calculator.infixToPostfix(infix);
                     System.out.println("Postfix: " + postfix);
 
+                    // Crea la pila específica para evaluar esta operación
                     IStack<Double> evaluationStack = StackFactory.createStack(stackType, listType);
 
                     double result = calculator.evaluatePostfix(postfix, evaluationStack);
@@ -45,6 +59,7 @@ public class Main {
             }
         } catch (Exception e) {
             System.out.println("Error leyendo el archivo datos.txt: " + e.getMessage());
+            System.out.println("Asegurese de que datos.txt este en la carpeta raiz del proyecto.");
         }
 
         scanner.close();
